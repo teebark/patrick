@@ -3,11 +3,11 @@
 //header.php
 
 include('Examination.php');
-/*
+
 $exam = new Examination;
 
 $exam->admin_session_private();
-*/
+
 ?>
 
 <!DOCTYPE html>
@@ -30,10 +30,10 @@ $exam->admin_session_private();
 </head>
 <body>
 	<div class="jumbotron text-center" style="margin-bottom:0; padding: 1rem 1rem;">
-  		<img src="logo.png" class="img-fluid" width="300" alt="Online Examination System in PHP" />
+  		<img src="master/logo.png" class="img-fluid" width="300" alt="Online Examination System in PHP" />
 	</div>
     <?php
-    /* if(isset($_SESSION['user_id'])) */
+    if(isset($_SESSION['user_id']))
     ?>
     <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
         <a class="navbar-brand" href="index.php">Admin Side</a>
